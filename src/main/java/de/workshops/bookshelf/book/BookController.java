@@ -13,7 +13,16 @@ public class BookController {
 
     static final String REQUEST_URL = "/";
 
+    @Value("${spring.application.bookshelf}")
+        String appName;
+
     private final BookService bookService;
+
+    @RequestMapping("/")
+        public String homePage(Book Book) {
+            book.addAttribute("appName", appName);
+            return "home";
+        }
 
     @GetMapping
     public String getAllBooks(Model model) {
