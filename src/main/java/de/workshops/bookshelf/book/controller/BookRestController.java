@@ -1,5 +1,9 @@
-package de.workshops.bookshelf.book;
+package de.workshops.bookshelf.book.controller;
 
+import de.workshops.bookshelf.book.Book;
+import de.workshops.bookshelf.book.BookException;
+import de.workshops.bookshelf.book.BookSearchRequest;
+import de.workshops.bookshelf.book.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,5 +1,6 @@
-package de.workshops.bookshelf.book;
+package de.workshops.bookshelf.book.repository;
 
+import de.workshops.bookshelf.book.Book;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
