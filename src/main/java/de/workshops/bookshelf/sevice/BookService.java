@@ -13,12 +13,11 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-@Slf4
 public class BookService {
 
     private final BookRepository bookRepository;
 
-    List<Book> getBooks() {
+    public List<Book> getBooks() {
         List<Book> books = new ArrayList<>();
         bookRepository.findAll().forEach(books::add);
 
