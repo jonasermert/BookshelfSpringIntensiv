@@ -1,8 +1,10 @@
-package de.workshops.bookshelf.book;
+package de.workshops.bookshelf.sevice;
 
-import de.workshops.bookshelf.book.repository.BookRepository;
+import de.workshops.bookshelf.entity.Book;
+import de.workshops.bookshelf.entity.BookSearchRequest;
+import de.workshops.bookshelf.exception.BookException;
+import de.workshops.bookshelf.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,8 +13,8 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-@Slf4j
-class BookService {
+@Slf4
+public class BookService {
 
     private final BookRepository bookRepository;
 

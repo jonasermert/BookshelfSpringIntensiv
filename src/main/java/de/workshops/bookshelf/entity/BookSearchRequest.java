@@ -1,12 +1,13 @@
-package de.workshops.bookshelf.book;
+package de.workshops.bookshelf.entity;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-class BookSearchRequest {
+public class BookSearchRequest {
 
     private String author;
     private String isbn;
+
 }

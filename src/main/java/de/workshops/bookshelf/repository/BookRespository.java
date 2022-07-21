@@ -1,6 +1,6 @@
-package de.workshops.bookshelf.book.repository;
+package de.workshops.bookshelf.repository;
 
-import de.workshops.bookshelf.book.Book;
+import de.workshops.bookshelf.entity.Book;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -8,4 +8,3 @@ import org.springframework.stereotype.Repository;
 interface BookRepository extends CrudRepository<Book, Long> {
 
     Book findByIsbn(String isbn);
-}

@@ -12,4 +12,5 @@ public class BookshelfApplicationProperties {
     private String title;
 
     private String version;
+
 }

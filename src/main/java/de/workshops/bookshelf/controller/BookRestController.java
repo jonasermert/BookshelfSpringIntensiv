@@ -1,9 +1,7 @@
-package de.workshops.bookshelf.book.controller;
+package de.workshops.bookshelf.controller;
 
-import de.workshops.bookshelf.book.Book;
-import de.workshops.bookshelf.book.BookException;
-import de.workshops.bookshelf.book.BookSearchRequest;
-import de.workshops.bookshelf.book.BookService;
+import de.workshops.bookshelf.entity.Book;
+import de.workshops.bookshelf.exception.BookException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -45,7 +43,7 @@ public class BookRestController {
         return bookService.searchBooks(request);
     }
 
-    @PutMapping
+    @PostMapping
     public Book createBook(@RequestBody Book book) {
         return bookService.createBook(book);
     }
@@ -61,4 +59,5 @@ public class BookRestController {
     public ResponseEntity<String> error(BookException ex) {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
+
 }

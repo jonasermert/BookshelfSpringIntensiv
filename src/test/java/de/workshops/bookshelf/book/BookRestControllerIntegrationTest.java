@@ -3,6 +3,7 @@ package de.workshops.bookshelf.book;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.workshops.bookshelf.book.controller.BookRestController;
+import de.workshops.bookshelf.entity.Book;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;

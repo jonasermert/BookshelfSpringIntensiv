@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @ServletComponentScan
 @SpringBootApplication(scanBasePackages = "de.workshops")
-@EnableJpaRepositories("de.workshops.book")
+@EnableJpaRepositories("de.workshops.bookshelf")
 @EntityScan("de.workshops.book")
 public class BookshelfApplication {
 

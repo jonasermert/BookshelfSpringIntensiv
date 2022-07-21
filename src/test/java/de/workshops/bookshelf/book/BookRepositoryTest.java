@@ -1,6 +1,7 @@
 package de.workshops.bookshelf.book;
 
 import de.workshops.bookshelf.book.repository.BookRepository;
+import de.workshops.bookshelf.entity.Book;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;

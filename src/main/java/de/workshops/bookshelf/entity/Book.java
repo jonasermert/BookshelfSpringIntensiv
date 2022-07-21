@@ -1,8 +1,10 @@
-package de.workshops.bookshelf.book;
+package de.workshops.bookshelf.entity;
 
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Objects;
 
 @Getter
 @Setter
@@ -10,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-class Book {
+public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
